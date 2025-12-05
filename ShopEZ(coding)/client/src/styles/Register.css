@@ -1,0 +1,72 @@
+/* Register.css */
+
+.register-page {
+  /* Container Card Styling */
+  width: 380px; /* Slightly wider for better form layout */
+  max-width: 90%; 
+  margin: 5vh auto;
+  padding: 30px; /* Increased padding */
+  background: #ffffff; /* White background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Header Styling */
+.register-page h2 {
+  margin-bottom: 25px;
+  color: #343a40; 
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+/* --- Input, Select, and Button Styling --- */
+
+/* Input/Select Common Styles */
+.register-page input,
+.register-page select {
+  width: 100%;
+  padding: 12px 15px; 
+  margin-bottom: 20px; /* Good vertical spacing between fields */
+  border: 1px solid #ced4da; 
+  border-radius: 8px; /* Rounded borders */
+  box-sizing: border-box; 
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none; /* Helps style the select element consistently */
+  -webkit-appearance: none;
+}
+
+/* Focus State */
+.register-page input:focus,
+.register-page select:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none; 
+}
+
+/* Select Placeholder/Default Option Styling (for visual distinction) */
+.register-page select option[value=""]:first-of-type {
+  color: #999;
+}
+
+/* Button Styling */
+.register-page button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745; /* Changed to a success/green color for register */
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 10px; 
+}
+
+/* Button Hover State */
+.register-page button:hover {
+  background: #1e7e34; /* Darker green on hover */
+  transform: translateY(-1px);
+}

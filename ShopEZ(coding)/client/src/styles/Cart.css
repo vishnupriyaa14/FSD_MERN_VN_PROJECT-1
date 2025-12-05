@@ -1,0 +1,189 @@
+/* ---------------- CART PAGE LAYOUT ---------------- */
+
+.cartPage{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+}
+
+/* ---------------- CART CONTENTS ---------------- */
+
+.cartContents{
+    width: 65%;
+    background-color: rgba(241, 247, 245, 0.237);
+    height: 83vh;
+    border: 1px solid #d8d8df;
+    padding: 4vh 2vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: .3rem;
+}
+
+/* ---------------- CART ITEM ---------------- */
+
+.cartItem{
+    display: flex;
+    gap: 3vw;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.cartItem img{
+    width: 25%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: .3rem;
+}
+
+/* ---------------- CART ITEM TEXT ---------------- */
+
+.cartItem-data h4{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #3b5468;
+}
+
+.cartItem-data p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #7b828a;
+}
+
+/* ---------------- ITEM INPUTS ---------------- */
+
+.cartItem-inputs{
+    display: flex;
+    gap: 40px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.cartItem-inputs span p{
+    display: flex;   
+    gap: 10px;
+    margin: 0;
+}
+
+.cartItem-inputs input{
+    max-width: 40px;
+    padding-left: 10px;
+    font-size: 0.7rem;
+    height: 22px;
+    border-radius: .2rem;
+    border: 1px solid #cccccc;
+}
+
+.cartItem-data button{
+    margin-top: 12px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cartItem-data button:hover{
+    background-color: #e63b3b;
+}
+
+/* ---------------- PRICE BOX ---------------- */
+
+.cartPriceBody{
+    width: 24%;
+    height: fit-content;
+    background-color: rgba(240, 245, 245, 0.345);
+    padding: 3vh 2vw;
+    border: 1px solid #dfdadaeb;
+    border-radius: 0.3rem;
+}
+
+.cartPriceBody h4{
+    margin-bottom: 3vh;
+    color: rgb(103, 120, 146);
+}
+
+.cartPriceBody span{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(50, 63, 77);
+}
+
+.cartPriceBody span p{
+    margin-bottom: 10px;
+}
+
+.cartPriceBody h5{
+    font-weight: 400;
+    color: rgb(36, 57, 78);
+}
+
+.cartPriceBody h5 b{
+    font-weight: 600;
+}
+
+.cartPriceBody button{
+    width: 100%;
+    padding: 13px 0;
+    font-weight: 600;
+    margin: 3vh 0;
+    background-color: #504aec;
+    color: aliceblue;
+    border: none;
+    border-radius: 0.2rem;
+    transition: .3s;
+}
+
+.cartPriceBody button:hover{
+    background-color: #3f3ac8;
+}
+
+/* ---------------- CHECKOUT MODAL ---------------- */
+
+.checkout-address h4{
+    color: rgb(103, 120, 146);
+    margin-bottom: 1rem;
+}
+
+.modal-body .checkout-address section{
+    display: flex;
+    gap: 3%;
+}
+
+.span-child-1{
+    width: 65%;
+}
+
+.span-child-2{
+    width: 32%;
+}
+
+/* ---------------- PAYMENT SECTION (NEW & FIXED) ---------------- */
+
+/* Checkout form fix (line by line layout) */
+.checkout-address section {
+    display: block !important;
+}
+
+.checkout-address .span-child-1,
+.checkout-address .span-child-2 {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+.checkout-address .form-floating {
+    width: 100%;
+}
+
+/* Modal scroll fix */
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+}
